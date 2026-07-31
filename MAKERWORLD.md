@@ -1,6 +1,7 @@
 # MakerWorld listing — copy/paste
 
-Everything below is ready to paste. Drop in your photos where noted.
+Everything below is ready to paste. Replace `YOUR-GITHUB-USERNAME` throughout,
+and drop in your photos where noted.
 
 ---
 
@@ -110,9 +111,10 @@ A ready-to-slice `.3mf` is included with the plates already arranged.
 
 ### You'll also need
 
-- The stand and ball guard from **[dtxtr's original
-  model](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball)** — not
-  included here, go download them from him
+- The stand — a remix of **[dtxtr's
+  original](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball)**,
+  included here as `brium_stand.stl`. Go download and like his model too.
+- The ball guard — plywood, cut from your offcut; dimensions on his page
 - 610 × 610 × 12 mm plywood (his stand is sized for 12 mm stock)
 - A lacrosse ball
 - A jigsaw or bandsaw, and something to sand the curve back to the line
@@ -129,7 +131,7 @@ it. If you make this, go like and follow his model first.
 
 Full build guide, the parametric OpenSCAD source, and the maths behind the
 sweep radius:
-**https://github.com/klubieniecki/brium-board**
+**https://github.com/YOUR-GITHUB-USERNAME/brium-board**
 
 Remixes welcome — the source is CC BY-SA 4.0. If you adapt it for a different
 sheet size, post a make and tell me the numbers you used.
@@ -155,9 +157,13 @@ sheet size, post a make and tell me the numbers you used.
 ## Before you publish
 
 - MakerWorld's licence selector: pick **CC BY-SA** to match the repo.
-- Upload **only your own stencil files.** Don't re-host dtxtr's stand — link to
-  it. Re-uploading someone else's model is the fastest way to get a listing
-  pulled, and the link sends him the traffic anyway.
+- The stand is a **derivative of dtxtr's model**, not your own design. Before
+  you upload it, check his licence actually permits derivatives and
+  redistribution, and match the terms he set. If it doesn't, drop the stand from
+  the listing and link to his page instead — the stencil stands on its own, and
+  an unlicensed remix is the fastest way to get a listing pulled.
+- Credit him in the description *and* in MakerWorld's "remix / derivative"
+  field, not just in the body text.
 - If you enter it in a MakerWorld contest, check the rules on derivative
   works — a jig for someone else's model is usually fine, but the entry terms
   are worth a read.

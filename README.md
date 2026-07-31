@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="brand/brium-logo.png" width="460" alt="Brium Board">
+</p>
+
 # Brium Board
 
 *Brium* — the tail of *aequilibrium*, Latin for balance.
@@ -22,7 +26,7 @@ template that works at all four corners.
 | Part | Material | Source |
 | --- | --- | --- |
 | Brium board | 12 mm plywood, 360 × 610 mm | cut it yourself — **this repo's stencil** |
-| Stand | 3D printed | [dtxtr on Printables](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball) |
+| Stand | 3D printed | `stl/brium_stand.stl` — remixed from [dtxtr's design](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball) |
 | Ball guard | 12 mm plywood | [dtxtr on Printables](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball) — cut from the offcut |
 | Ball | lacrosse ball | any sporting goods shop |
 
@@ -37,7 +41,7 @@ plywood is cut, the stencil's job is done.
 | --- | --- | --- |
 | Plywood | 610 × 610 × 12 mm | 2 ft × 2 ft hobby panel. Birch ply is what the original used; void-free matters more than species |
 | Lacrosse ball | standard, ~63 mm | solid rubber. Do not substitute a tennis ball |
-| Filament | ~40 g PLA/PETG | for the stencil; the stand needs its own — see dtxtr's page |
+| Filament | ~40 g for the stencil, ~150 g per stand piece | PLA is fine for both |
 | 3 mm rod | 40 mm | joins the two stencil halves. A stub of 1.75 mm filament doubled over, an M3 bolt, or a brad nail all work |
 | Sandpaper | 80 / 120 / 220 grit | |
 | Finish | oil, poly or hardwax | your call |
@@ -190,12 +194,27 @@ plus the lap is enough for a jig.
 
 ![Print layout](docs/images/print_layout.png)
 
-### The stand and ball guard
+### The stand
 
-Not hosted here — grab them from **[dtxtr's Printables
-page](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball)**
-and follow his print settings. The stand is sized for 12 mm board stock, so
-keep your plywood at 12 mm or adjust his model to suit.
+**A remix of [dtxtr's stand](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball)**,
+modified to suit this build. His original is the design; this is a derivative
+of it — go download and like his model too.
+
+| File | Size | Notes |
+| --- | --- | --- |
+| `stl/brium_stand.stl` | 103 × 130 × 24 mm | one stand piece — print two |
+| `brium_stand.3mf` | — | Bambu Studio project, sliced for a P1S |
+
+125 cm³ of geometry, so budget roughly 150 g of filament per piece. The 3mf is
+set up at 0.2 mm layers, 2 walls, 15 % infill, **no supports**, auto brim.
+
+The stand is sized for 12 mm board stock — keep your plywood at 12 mm or adjust
+the model to suit.
+
+### The ball guard
+
+Plywood, not printed — cut it from the 250 mm offcut. Dimensions are on
+[dtxtr's page](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball).
 
 <!-- IMAGE: printed stand parts -->
 ![Printed stand](docs/images/printed-stand.jpg)
@@ -253,10 +272,11 @@ docs/images/                   renders and build photos
 - **[dtxtr](https://www.printables.com/@dtxtr_339032)** — the original
   [Balance Board Stand (board and ball)](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball).
   The board profile, the stand and the ball guard are all his design. This repo
-  only re-derives his outline for a different sheet size and wraps it in a
-  layout jig. If you build this, go give his model a like.
+  re-derives his outline for a different sheet size, wraps it in a layout jig,
+  and includes a modified version of his stand. If you build this, go give his
+  model a like first.
 - Brium stencil design and OpenSCAD source:
-  **[@klubieniecki](https://github.com/klubieniecki)**
+  **[@YOUR-GITHUB-USERNAME](https://github.com/YOUR-GITHUB-USERNAME)**
 
 ## License
 
@@ -264,6 +284,9 @@ docs/images/                   renders and build photos
      printable models and keeps you compatible with the remix culture on
      Printables/MakerWorld. -->
 
-The OpenSCAD source and the exported stencil files in this repo are released
-under **CC BY-SA 4.0**. dtxtr's stand and ball guard are **not** redistributed
-here — download them from his Printables page under his terms.
+The OpenSCAD source and the exported **stencil** files in this repo are released
+under **CC BY-SA 4.0**.
+
+`brium_stand.stl` / `brium_stand.3mf` are a **derivative of dtxtr's stand**, not
+original work. Before publishing this repo or a listing, check that his licence
+permits derivatives and redistribution, and match whatever terms he set.
