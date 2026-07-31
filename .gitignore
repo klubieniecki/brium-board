@@ -1,0 +1,5 @@
+.DS_Store
+*.gcode
+*.3mf.bak
+/tmp/
+_to_delete/
