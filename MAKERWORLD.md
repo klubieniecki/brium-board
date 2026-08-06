@@ -14,7 +14,7 @@ Brium Board — balance board layout stencil for one 2×2 plywood sheet
 ## Summary / tagline
 
 ```
-Brium (from aequilibrium). A 3D-printed jig that draws dtxtr's balance board profile onto a 610 × 610 mm plywood sheet. One template, all four corners, symmetric by construction.
+Brium (from equilibrium). A 3D-printed jig that draws dtxtr's balance board profile onto a 610 × 610 mm plywood sheet. One template, all four corners, symmetric by construction.
 ```
 
 ## Tags
@@ -31,7 +31,7 @@ Tools & Gadgets → Woodworking / Jigs
 
 ## Description
 
-**Brium** — the tail end of *aequilibrium*. Latin for balance, minus the run-up.
+**Brium** — the tail end of *equilibrium*. Balance, minus the run-up.
 
 **This is a layout jig, not the board itself.**
 
@@ -129,9 +129,15 @@ A ready-to-slice `.3mf` is included with the plates already arranged.
 All I did was re-derive his outline for a bigger sheet and build a jig to draw
 it. If you make this, go like and follow his model first.
 
+Further up the family tree:
+**[whitespring's](https://www.printables.com/@whitespring)**
+["Balance board pattern and parts"](https://www.printables.com/model/926271-balance-board-pattern-and-parts)
+(the Rola). Their printed parts are included unmodified in the repo's
+`third_party/whitespring/` folder — go like that one too.
+
 Full build guide, the parametric OpenSCAD source, and the maths behind the
 sweep radius:
-**https://github.com/YOUR-GITHUB-USERNAME/brium-board**
+**https://github.com/klubieniecki/brium-board**
 
 Remixes welcome — the source is CC BY-SA 4.0. If you adapt it for a different
 sheet size, post a make and tell me the numbers you used.
@@ -140,13 +146,16 @@ sheet size, post a make and tell me the numbers you used.
 
 ## Photos to upload (in this order)
 
-1. Finished Brium board on the stand — the money shot, this becomes the thumbnail
-2. Stencil hooked on a plywood corner, pencil mid-trace
-3. The full outline traced, before cutting
-4. Both halves pinned together, on the board
-5. Render of all four corners covered (`docs/images/board_preview.png`)
-6. The cut-line dimension diagram (`docs/images/cutline_diagram.png`)
-7. Print layout render (`docs/images/print_layout.png`)
+1. Finished Brium board on the stand — the money shot, this becomes the
+   thumbnail. **Still needs shooting** — the rest are in `docs/images/`.
+2. Stencil hooked on a plywood corner (`docs/images/tracing.jpg`)
+3. The outline traced, stencil flipped for the far corners (`docs/images/traced-outline.jpg`)
+4. Both halves pinned together, on the board (`docs/images/stencil-joined.jpg`)
+5. Cut and sanded board (`docs/images/sanded-board.jpg`)
+6. Rola guard track installed on the underside (`docs/images/rola-installed.jpg`)
+7. Render of all four corners covered (`docs/images/board_preview.png`)
+8. The cut-line dimension diagram (`docs/images/cutline_diagram.png`)
+9. Print layout render (`docs/images/print_layout.png`)
 
 <!-- MakerWorld weights the first image heavily in the feed. A real photo of a
      finished wooden board will out-perform a render every time — lead with it,

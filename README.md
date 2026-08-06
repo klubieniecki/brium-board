@@ -4,7 +4,7 @@
 
 # Brium Board
 
-*Brium* — the tail of *aequilibrium*, Latin for balance.
+*Brium* — the tail of *equilibrium*.
 
 A rocker-style balance board and stand, cut from a **single 2 ft × 2 ft plywood
 sheet** (610 × 610 mm), balanced on a lacrosse ball.
@@ -16,8 +16,9 @@ on Printables. What this repo adds is the piece that model doesn't include: a
 scaled to a 2×2 sheet, symmetric by construction, and drawn from one printed
 template that works at all four corners.
 
-<!-- IMAGE: hero shot — finished board on the stand, ball underneath, good light -->
-![The finished Brium board](docs/images/finished-board.jpg)
+<!-- IMAGE still needed: hero shot — finished board on the stand, ball underneath,
+     good light. When shot, save as docs/images/finished-board.jpg and restore:
+![The finished Brium board](docs/images/finished-board.jpg) -->
 
 ---
 
@@ -40,14 +41,13 @@ plywood is cut, the stencil's job is done.
 | Item | Spec | Notes |
 | --- | --- | --- |
 | Plywood | 610 × 610 × 12 mm | 2 ft × 2 ft hobby panel. Birch ply is what the original used; void-free matters more than species |
-| Lacrosse ball | standard, ~63 mm | solid rubber. Do not substitute a tennis ball |
+| Lacrosse ball | [standard](https://www.amazon.ca/dp/B072373GWG), ~63 mm | solid rubber. Do not substitute a tennis ball |
 | Filament | ~40 g for the stencil, ~150 g per stand piece | PLA is fine for both |
 | 3 mm rod | 40 mm | joins the two stencil halves. A stub of 1.75 mm filament doubled over, an M3 bolt, or a brad nail all work |
 | Sandpaper | 80 / 120 / 220 grit | |
 | Finish | oil, poly or hardwax | your call |
 
-<!-- IMAGE: flat-lay of the raw materials before starting -->
-![Materials](docs/images/materials.jpg)
+![The 610 × 610 sheet, before anything happens to it](docs/images/materials.jpg)
 
 ---
 
@@ -71,8 +71,7 @@ The board keeps the **full 610 mm length** of the sheet and gets ripped to
 The rounded outline is then laid out **inside** that 360 × 610 rectangle — it
 touches all four edges, so you lose nothing to the curve.
 
-<!-- IMAGE: the sheet marked up before the rip cut -->
-![Cut layout](docs/images/cut-layout.jpg)
+![The sheet marked up — centrelines and layout before the rip cut](docs/images/cut-layout.jpg)
 
 ---
 
@@ -136,6 +135,8 @@ over, so the stencil registers **both ways up**:
 **Lip down** — the flanges hang 6 mm past the board edges and drop 3 mm. Seat
 it on a corner and it hooks both edges. It can only sit in one place.
 
+![Lip down, hooked over the plywood corner](docs/images/stencil-hooked.jpg)
+
 **Flipped** — the lip now faces up and hooks nothing, so five loose pegs take
 over. Their holes are placed so the **inner tangent of the peg sits exactly on
 the board edge line**, and a through-hole is symmetric about the plate's
@@ -156,11 +157,9 @@ mid-plane, so the registration survives the flip.
 6. The short ends need no tracing — the cut line runs along the existing edge
    for 128 mm before it curves away.
 
-<!-- IMAGE: stencil hooked on a corner, pencil mid-trace -->
-![Tracing](docs/images/tracing.jpg)
+![The stencil seated on a corner, ready to trace](docs/images/tracing.jpg)
 
-<!-- IMAGE: the full outline traced, before cutting -->
-![Traced outline](docs/images/traced-outline.jpg)
+![Flipped for the opposite-handed corners, outline taking shape](docs/images/traced-outline.jpg)
 
 ### Cutting and finishing
 
@@ -169,8 +168,7 @@ or a drum in a drill press makes short work of the R60 corners. Round the top
 edges over with a 3–6 mm roundover or just break them with 120 grit — you'll be
 standing on this barefoot.
 
-<!-- IMAGE: cut and sanded board before finish -->
-![Sanded board](docs/images/sanded-board.jpg)
+![Cut and sanded, before finish](docs/images/sanded-board.jpg)
 
 ---
 
@@ -191,6 +189,8 @@ head-down. Everything fits a 180 mm bed.
 
 The two halves join with a half-lap and a 3 mm pin. Glue is optional; the pin
 plus the lap is enough for a jig.
+
+![Both halves joined, sitting on the traced line](docs/images/stencil-joined.jpg)
 
 ![Print layout](docs/images/print_layout.png)
 
@@ -216,8 +216,19 @@ the model to suit.
 Plywood, not printed — cut it from the 250 mm offcut. Dimensions are on
 [dtxtr's page](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball).
 
-<!-- IMAGE: printed stand parts -->
-![Printed stand](docs/images/printed-stand.jpg)
+### The original Rola parts
+
+Further up the family tree sits
+**[whitespring's "Balance board pattern and parts"](https://www.printables.com/model/926271-balance-board-pattern-and-parts)**.
+Their `Rola_Parts-v2.3mf` (two printed parts, ready-sliced in PrusaSlicer) is
+included unmodified in [`third_party/whitespring/`](third_party/whitespring/) —
+see that folder's README and their Printables page for usage and licence.
+
+They mount to the board's underside with threaded inserts and M-screws:
+
+![Inserts, screws and the printed Rola parts](docs/images/rola-hardware.jpg)
+
+![The Rola guard track installed on the underside](docs/images/rola-installed.jpg)
 
 ---
 
@@ -261,14 +272,22 @@ brium_stencil.scad     the parametric source — everything comes from here
 export_stl.sh                  regenerates all three STLs
 brium_stencil.3mf      Bambu Studio project, ready to slice
 stl/                           exported meshes
+third_party/whitespring/       whitespring's original Rola parts, unmodified
 docs/stencil.md                design notes: geometry, joint, mesh validation
 docs/images/                   renders and build photos
+site/                          the landing site (Next.js, deploys on Vercel)
 ```
 
 ---
 
 ## Credits
 
+- **[whitespring](https://www.printables.com/@whitespring)** — the
+  [Balance board pattern and parts](https://www.printables.com/model/926271-balance-board-pattern-and-parts)
+  ("Rola") that this whole family of boards traces back to. Their printed Rola
+  parts are included unmodified in
+  [`third_party/whitespring/`](third_party/whitespring/) — go like the
+  original.
 - **[dtxtr](https://www.printables.com/@dtxtr_339032)** — the original
   [Balance Board Stand (board and ball)](https://www.printables.com/model/1341613-balance-board-stand-board-and-ball).
   The board profile, the stand and the ball guard are all his design. This repo
@@ -276,7 +295,7 @@ docs/images/                   renders and build photos
   and includes a modified version of his stand. If you build this, go give his
   model a like first.
 - Brium stencil design and OpenSCAD source:
-  **[@YOUR-GITHUB-USERNAME](https://github.com/YOUR-GITHUB-USERNAME)**
+  **[@klubieniecki](https://github.com/klubieniecki)**
 
 ## License
 
@@ -290,3 +309,7 @@ under **CC BY-SA 4.0**.
 `brium_stand.stl` / `brium_stand.3mf` are a **derivative of dtxtr's stand**, not
 original work. Before publishing this repo or a listing, check that his licence
 permits derivatives and redistribution, and match whatever terms he set.
+
+Everything under `third_party/` is **other people's work, included unmodified**
+(currently whitespring's Rola parts) and is *not* covered by this repo's
+licence — the terms on each original model page apply.
